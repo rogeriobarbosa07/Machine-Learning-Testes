@@ -1,0 +1,9 @@
+scikit-learn
+matplotlib
+pandas
+numpy
+scipy
+graphviz
+yellowbrick
+seaborn
+mlxtend
