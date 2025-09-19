@@ -5,7 +5,7 @@
     - Tratamento de valores faltantes
     - Tratamento de Outliers
 - Codificação de categorias (One-Hot Encoder, Label Encoder)
-- Dimensionamento de características
+- Dimensionamento de características (colocar atributos numéricos na mesma escala)
 - Geração e extração de características
     - Binning
     - PCA
