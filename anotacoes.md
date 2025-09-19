@@ -11,6 +11,7 @@
     - PCA
     - Decomposição de datas
 - Seleção de características importantes (ignorar características irrelevantes)
+    - Combater maldição da dimensionalidade: características em excesso deterioram a performance do modelo (causa overfitting)
 
 ### Pré-processamento
 - Valores Faltantes
