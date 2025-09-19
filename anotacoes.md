@@ -27,3 +27,9 @@
     - Categoria "outros" p/ baixa cardinalidade
 - Geração de características: extrair outros atributos a partir de um existente
     - Ex: Data -> Dia, Mês, Ano
+
+### Funções de modelo de ML:
+- Instanciando: **modelo = algoritmo(parâmetros)**
+- Treinando: **modelo.fit(X_treino, y_treino)**
+- Prevendo: **^y = modelo.predict(X_teste)**
+- Comparando dados reais c/ previsões: **função_de_comparação(^y, y_teste)**
