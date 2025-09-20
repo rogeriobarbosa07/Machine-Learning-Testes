@@ -1,4 +1,4 @@
-## Anotações do Caderno
+## Anotações sobre Machine Learning
 
 ### Engenharia de Atributos
 - Pré-processamento:
