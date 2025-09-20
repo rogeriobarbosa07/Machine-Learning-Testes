@@ -2,19 +2,22 @@
 
 ### Diagrama do funcionamento do perceptron
 Entrada (x1, x2, ..., xn)
-           │
+
            ▼
-  Pesos (w1, w2, ..., wn) + Bias (b)
-           │
+
+Pesos (w1, w2, ..., wn) + Bias (b)
+
            ▼
-  Combinação Linear (função de previsão)
-       z = w1*x1 + w2*x2 + ... + wn*xn + b
-           │
+
+Combinação Linear (função de previsão): z = w1*x1 + w2*x2 + ... + wn*xn + b
+
            ▼
-     Função de Ativação f(z)
-           │
+
+Função de Ativação f(z)
+
            ▼
-      Saída do Neurônio (ŷ)
+
+Saída do Neurônio (ŷ)
 
 Interpretação:
 - Entrada: os atributos do dataset (sem a variável dependente).
@@ -25,3 +28,4 @@ Interpretação:
 
 ### Observações
 1. Pesos são diferentes para cada perceptron na rede, mas o bias é único (mesmo valor p/ todos os perceptrons)
+2. Pesos servem para treinar a rede: são ajustados no processo de treinamento
