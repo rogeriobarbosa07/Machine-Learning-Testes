@@ -27,3 +27,7 @@ Interpretação:
 - Epoch: uma passagem por todos os dados de treino
 - Iteração: cada passagem de todos os dados do registro
 - Batch size: equivale ao número de registros que serão passados por cada iteração
+
+### Aprendizado Online vs Batch
+- Online: os pesos podem ser atualizados a cada instância (final da iteração)
+- Batch: os pesos só são atualizados após todas as instâncias (final da epoch)
