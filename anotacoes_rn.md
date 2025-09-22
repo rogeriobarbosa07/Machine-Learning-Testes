@@ -51,3 +51,5 @@ Outra forma:
     3. Backward pass: Calcula o gradiente da função de custo em relação aos pesos utilizando Regra da Cadeia. O erro volta da camada de saída até a de entrada, ajustando cada peso de cada conexão
     4. Atualização dos pesos: os pesos são ajustados com o **Gradiente Descendente**: w[i+1] = w[i] - η.(∂E/∂w)
     - Obs: com o gradiente e o ajuste dos pesos, o erro diminuirá e a função de erro se aproximará de um mínimo (local ou global)
+    - Obs2: o peso antigo é usado como base para o peso atualizado (não se dá chute em peso, e utiliza valores antigos para aprendizado)
+    - Obs3: o quanto eu atualizo depende do tamanho do passo e da inclinação da reta
