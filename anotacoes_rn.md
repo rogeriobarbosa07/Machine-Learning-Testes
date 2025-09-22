@@ -36,3 +36,9 @@ Outra forma:
 ### Aprendizado Online vs Batch
 - Online: os pesos podem ser atualizados a cada instância (final da iteração)
 - Batch: os pesos só são atualizados após todas as instâncias (final da epoch)
+
+### Sobre o erro (loss)
+- "Existe uma taxa de aprendizado que ajusta os pesos"
+- "Com esses ajustes, a rede busca aprender padrões nos dados"
+- "O erro diminui ao longo do treinamento da rede"
+- "O processo busca um mínimo (não necessariamente o global) na curva de erro"
