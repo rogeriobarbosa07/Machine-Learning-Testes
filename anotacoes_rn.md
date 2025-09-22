@@ -42,3 +42,12 @@ Outra forma:
 - "Com esses ajustes, a rede busca aprender padrões nos dados"
 - "O erro diminui ao longo do treinamento da rede"
 - "O processo busca um mínimo (não necessariamente o global) na curva de erro"
+
+### Backpropagation
+- O que é: é o algoritmo utilizado para treinar as redes neurais (como a rede neural aprende), ajustando os pesos de cada conexão
+- Etapas:
+    1. Forward pass: Os dados de entrada passam pela rede, que gera uma saída ^y
+    2. Cálculo do erro: compara y com ^y, usando uma função de custo (ex: MSE, MAE)
+    3. Backward pass: Calcula o gradiente da função de custo em relação aos pesos utilizando Regra da Cadeia. O erro volta da camada de saída até a de entrada, ajustando cada peso de cada conexão
+    4. Atualização dos pesos: os pesos são ajustados com o **Gradiente Descendente**: w[i+1] = w[i] - η.(∂E/∂w)
+    - Obs: com o gradiente e o ajuste dos pesos, o erro diminuirá e a função de erro se aproximará de um mínimo (local ou global)
