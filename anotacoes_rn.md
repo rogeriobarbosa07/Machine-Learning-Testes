@@ -53,3 +53,11 @@ Outra forma:
     - Obs: com o gradiente e o ajuste dos pesos, o erro diminuirá e a função de erro se aproximará de um mínimo (local ou global)
     - Obs2: o peso antigo é usado como base para o peso atualizado (não se dá chute em peso, e utiliza valores antigos para aprendizado)
     - Obs3: o quanto eu atualizo depende do tamanho do passo e da inclinação da reta
+
+### Relação entre pesos, gráfico de erro e gradiente descendente
+- Momento em que a rede neural aprende: no cálculo do ângulo com derivadas parciais
+    - encontra o ângulo da inclinação
+    - ajusta os pesos
+    - pesos influenciam nos valores de previsão
+    - influência dos pesos muda a posição no gráfico do erro a cada iteração
+    - gradiente descendente: diminui o erro (muda a posição no gráfico para uma menor)
