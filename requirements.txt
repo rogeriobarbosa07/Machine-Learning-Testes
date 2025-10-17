@@ -8,3 +8,5 @@ yellowbrick
 seaborn
 mlxtend
 openpyxl
+keras
+tensorflow
