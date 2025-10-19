@@ -177,5 +177,32 @@ preenchendo valores nulos de uma coluna passando um valor específico
 ```
 df['formacao'].fillna('valor de preenchimento, inplace=True)
 ```
+removendo linha especificada do dataset
+```
+# n é o número da linha que se deseja remover
+df2 = df.drop(index=0)
+```
+
+renomeando colunas
+```
+renomear_colunas = {
+    'coluna1': 'col1',
+    'coluna2': 'col2',
+    ...
+}
+
+df2 = df_tratado.rename(columns=renomear_colunas)
+df2.columns
+
+# os novos nomes serão os que aparecem depois dos 2 pontos (:)
+```
+
+separando valores de uma coluna para novas colunas (ex: localização -> x, y)
+```
+df2 = pd.DataFrame()
+df2[['x', 'y']] = df['Localização'].str.split(', ', expand=True)
+
+# df2 terá as novas colunas com os valores que foram separados
+```
 
 Obs: adicionar LabelEncoder, OneHotEncoder
