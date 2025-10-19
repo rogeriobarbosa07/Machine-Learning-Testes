@@ -215,4 +215,9 @@ df2[['coluna1', 'coluna2', ...]] = df[['coluna1', 'coluna2', ...]].astype(float)
 
 ```
 
+pegar o índice de um valor específico em um dataframe
+```
+indice = df.index[df['coluna'] == 'valor'].tolist()
+```
+
 Obs: adicionar LabelEncoder, OneHotEncoder
