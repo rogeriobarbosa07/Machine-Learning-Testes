@@ -205,4 +205,14 @@ df2[['x', 'y']] = df['Localização'].str.split(', ', expand=True)
 # df2 terá as novas colunas com os valores que foram separados
 ```
 
+converter valores de uma coluna (ex: str p/ float)
+```
+# uma coluna
+df2['coluna'] = df['coluna'].astype(float)
+
+# várias colunas
+df2[['coluna1', 'coluna2', ...]] = df[['coluna1', 'coluna2', ...]].astype(float)
+
+```
+
 Obs: adicionar LabelEncoder, OneHotEncoder
