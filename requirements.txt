@@ -10,3 +10,7 @@ mlxtend
 openpyxl
 keras
 tensorflow
+lime
+interpret
+eli5
+shap
