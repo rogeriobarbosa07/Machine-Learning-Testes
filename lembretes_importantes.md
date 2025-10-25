@@ -7,3 +7,5 @@
     - Importante para NLP
 
 - Reestudar e estudar mehor sobre XAI
+
+- Reestudar e estudar melhor sobre NLP
