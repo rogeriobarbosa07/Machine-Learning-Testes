@@ -220,4 +220,40 @@ pegar o índice de um valor específico em um dataframe
 indice = df.index[df['coluna'] == 'valor'].tolist()
 ```
 
-Obs: adicionar LabelEncoder, OneHotEncoder
+One-Hot Encoder
+```
+# Inicializa o codificador OneHotEncoder para transformar variáveis categóricas em numéricas
+ohe_encoder = OneHotEncoder(sparse_output=False)
+
+# Define a lista de colunas categóricas a serem codificadas
+categorical_columns = [
+    'coluna 1', 'coluna 2', ...
+]
+
+# Remove a coluna alvo antes de trabalhar nos atributos
+df_features = df.drop(columns=['cargo'])
+
+# Aplica a codificação One-Hot nas colunas categóricas do conjunto de treinamento
+encoded_data = ohe_encoder.fit_transform(df_features[categorical_columns])
+
+# Obtém os nomes das novas colunas geradas pela codificação
+new_columns = ohe_encoder.get_feature_names_out(categorical_columns)
+
+# Cria um DataFrame com os dados codificados e os novos nomes de colunas
+df_ohe = pd.DataFrame(encoded_data, columns=new_columns)
+
+# Remove as colunas categóricas originais do conjunto de treinamento
+df_not_phe = df_features.drop(columns=categorical_columns).reset_index(drop=True)
+
+# Concatena o DataFrame com as colunas codificadas ao DataFrame original
+X = pd.concat([df_not_phe, df_ohe], axis=1)
+```
+
+Label Encoder
+```
+y = df['coluna alvo']
+label_encoder = LabelEncoder()
+encoded_label = label_encoder.fit_transform(y)
+y = encoded_label
+y[:100]
+```

@@ -12,7 +12,7 @@
 3. **Transformação**: Dados precisam ser formatados p/que o algoritmo possa interpretá-los ns etapa seguinte
     - Geração de novos atributos (extração de carcterísticas)
     - Agregação de valores (Binning)
-    - Vetorização de categorias: One-Hot Encoder
+    - Vetorização de categorias
     - Vetorização de classes
     - Adaptar os dados p/valores que o modelo consiga ler (valores numéricos)
     - Etc.
@@ -24,6 +24,13 @@
     - Matriz de confusão
 Obs: pode haver mudançãs na ordem
 Obs2: não usar outros meio p/prever a classe alvo (deve-se prevê-la apenas na mineração)
+
+### Sobre Vetorização
+- De Categorias
+    - One-Hot Encoder para atributos com valores não sequenciais
+    - Label Encoder para atributos com valores sequenciais (ou manipular valores manualmente por garantia)
+- De Classes (alvo)
+    - Apenas Label Encoder
 
 ### Engenharia de Atributos
 - Pré-processamento:
