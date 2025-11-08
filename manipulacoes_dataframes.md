@@ -220,6 +220,12 @@ pegar o índice de um valor específico em um dataframe
 indice = df.index[df['coluna'] == 'valor'].tolist()
 ```
 
+modificando valores (de uma coluna específica)
+```
+df.loc[df['coluna'] == 'valor 1', 'coluna'] = 'valor 2'
+# todos os valores de 'coluna', que antes eram 'valor 1' passarão a ser 'valor 2'
+```
+
 One-Hot Encoder
 ```
 # Inicializa o codificador OneHotEncoder para transformar variáveis categóricas em numéricas
