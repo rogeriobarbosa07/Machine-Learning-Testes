@@ -226,6 +226,11 @@ df.loc[df['coluna'] == 'valor 1', 'coluna'] = 'valor 2'
 # todos os valores de 'coluna', que antes eram 'valor 1' passarão a ser 'valor 2'
 ```
 
+removendo valores nulos (geral):
+```
+df = df.dropna()
+```
+
 One-Hot Encoder
 ```
 # Inicializa o codificador OneHotEncoder para transformar variáveis categóricas em numéricas
