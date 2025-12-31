@@ -1,3 +1,7 @@
+- Reestudar melhor sobre os Algoritmos de ML
+
+- Reestudar melhor sobre Redes Neurais
+
 - Reestudar e estudar melhor sobre CNNs:
     - Parte de CNN inicial
     - Parte de AutoEncoders
@@ -9,3 +13,7 @@
 - Reestudar e estudar mehor sobre XAI
 
 - Reestudar e estudar melhor sobre NLP
+
+- Reestudar e estudar melhor sobre LLMs:
+    - Inclui HuggingFace e os modelos armazenados lá
+    - Modelos GPT da OpenAI
