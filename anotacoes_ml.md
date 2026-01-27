@@ -4,26 +4,36 @@
 1. **Seleção**
     - Analisar subconjunto
     - Escolher subconjunto (Atributos independentes + Alvo)
-2. **Pré-Processamento** (Limpeza dos dados)
+2. **Pré-Processamento** - Limpeza dos dados (Transformar dados "sujos" em dados "confiáveis")
     - Analisar dados ausentes por atributo
     - Dados inconsistentes
     - Detectar outliers
     - Etc.
-3. **Transformação**: Dados precisam ser formatados p/que o algoritmo possa interpretá-los ns etapa seguinte
-    - Geração de novos atributos (extração de carcterísticas)
+3. **Transformação** - Formatação dos dados
+    - Tratamento de dados ausentes (ex: mean, median, most_frequent, KNNImputer)
+    - Codificação de variáveis categóricas (ex: OneHotEncoder, OrdinalEncoder, LabelEncoder)
+        - Adaptar os dados p/valores que o modelo consiga ler (adapta p/ valores numéricos)
+        - OneHotEncoder: Cria nova coluna p/cada **categoria** única da sua variável. Atua nas **vars. de Entrada**
+        - LabelEncoder: Transformação de **classes** em números (ex: 0, 1, 2 ...). Atua na **var. Alvo**
+        - OrdinalEncoder: Parecido com o LabelEncoder, mas projetado para as vars. de Entrada
+    - Normalização ou padronização (ex: StandardScaler, MinMaxScaler ou RobustScaler)
+    - Seleção e remoção de colunas
+    - Criação de novos atributos (Extração de características. Engenharia de atributos)
     - Agregação de valores (Binning)
-    - Vetorização de categorias
-    - Vetorização de classes
-    - Adaptar os dados p/valores que o modelo consiga ler (valores numéricos)
     - Etc.
-4. Mineração de dados
+4. **Mineração de dados**
     - Escolher modelo
     - Inserir o conjunto "train" (X e y) no algoritmo p/treiná-lo
-5. Avaliação
+5. **Avaliação**
     - Inserir o conjunto de teste no modelo treinado p/avaliar o modelo
     - Matriz de confusão
-Obs: pode haver mudançãs na ordem
-Obs2: não usar outros meio p/prever a classe alvo (deve-se prevê-la apenas na mineração)
+    - Métricas (ex: Accuracy, Precision, Recall, F1-score, MC)
+
+Obs: Definir melhor a diferença entre Pré-processamento e Transformação (ou juntar a explicação dos dois)
+
+Obs2: pode haver mudançãs na ordem
+
+Obs3: não usar outros meio p/prever a classe alvo (deve-se prevê-la apenas na mineração)
 
 ### Sobre Vetorização
 - De Categorias
