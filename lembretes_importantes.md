@@ -14,6 +14,11 @@
 
 - Reestudar e estudar melhor sobre NLP
 
-- Reestudar e estudar melhor sobre LLMs:
+- Reestudar e estudar melhor sobre LLMs e IAs Generativas:
     - Inclui HuggingFace e os modelos armazenados lá
     - Modelos GPT da OpenAI
+    - Modelo do Gemini
+    - Modelo do DeepSeek
+    - DALL-E
+    - Stabel Diffusion
+    - Whisper
