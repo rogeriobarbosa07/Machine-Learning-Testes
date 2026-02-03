@@ -22,3 +22,6 @@
     - DALL-E
     - Stabel Diffusion
     - Whisper
+
+- Reestudar e estudar melhor sobre Agentes, RAGs e Langchain
+    - Orquestração de LLMs (Langchain é uma delas)
