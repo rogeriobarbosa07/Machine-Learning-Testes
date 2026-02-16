@@ -25,3 +25,9 @@
 
 - Reestudar e estudar melhor sobre Agentes, RAGs e Langchain
     - Orquestração de LLMs (Langchain é uma delas)
+
+- Reestudar e estudar melhor sobre Detecção de Dnomailias
+    - Técnicas Estatísticas
+    - Técnicas de Machine Learning
+    - Técnicas de Deep Learning
+    - Técnicas de Séries Temporais
