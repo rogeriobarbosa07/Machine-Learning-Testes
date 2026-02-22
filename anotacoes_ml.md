@@ -5,12 +5,11 @@
     - Analisar subconjunto
     - Escolher subconjunto (Atributos independentes + Alvo)
 2. **Pré-Processamento** - Limpeza dos dados (Transformar dados "sujos" em dados "confiáveis")
-    - Analisar dados ausentes por atributo
+    - Tratamento de dados ausentes (ex: mean, median, most_frequent, KNNImputer)
     - Dados inconsistentes
     - Detectar outliers
     - Etc.
 3. **Transformação** - Formatação dos dados
-    - Tratamento de dados ausentes (ex: mean, median, most_frequent, KNNImputer)
     - Codificação de variáveis categóricas (ex: OneHotEncoder, OrdinalEncoder, LabelEncoder)
         - Adaptar os dados p/valores que o modelo consiga ler (adapta p/ valores numéricos)
         - OneHotEncoder: Cria nova coluna p/cada **categoria** única da sua variável. Atua nas **vars. de Entrada**
