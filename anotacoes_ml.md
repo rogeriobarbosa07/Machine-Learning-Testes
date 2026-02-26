@@ -6,6 +6,7 @@
     - Escolher subconjunto (Atributos independentes + Alvo)
 2. **Pré-Processamento** - Limpeza dos dados (Transformar dados "sujos" em dados "confiáveis")
     - Tratamento de dados ausentes (ex: mean, median, most_frequent, KNNImputer)
+    - Tratamento de linhas duplicadas
     - Dados inconsistentes
     - Detectar outliers
     - Etc.
