@@ -18,7 +18,7 @@
     - Normalização ou padronização (ex: StandardScaler, MinMaxScaler ou RobustScaler)
     - Seleção e remoção de colunas
     - Criação de novos atributos (Extração de características. Engenharia de atributos)
-    - Agregação de valores (Binning)
+    - Agregação de valores (Binning): Condensação de dados de um determinado atributo em dados mais generalistas
     - Etc.
 4. **Mineração de dados**
     - Escolher modelo
