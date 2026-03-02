@@ -1,5 +1,3 @@
-## Anotações sobre Machine Learning
-
 ### KDD
 1. **Seleção**
     - Analisar subconjunto
@@ -26,19 +24,16 @@
 4. **Mineração de dados**
     - Escolher modelo
     - Inserir o conjunto "train" (X e y) no algoritmo p/treiná-lo
+    - **Funções de modelo de ML:**
+        - Instanciando: **modelo = algoritmo(parâmetros)**
+        - Treinando: **modelo.fit(X_treino, y_treino)**
+        - Prevendo: **^y = modelo.predict(X_teste)**
+        - Comparando dados reais c/ previsões: **função_de_comparação(^y, y_teste)**
 5. **Avaliação**
     - Inserir o conjunto de teste no modelo treinado p/avaliar o modelo
     - Matriz de confusão
     - Métricas (ex: Accuracy, Precision, Recall, F1-score, MC)
 
-Obs: Definir melhor a diferença entre Pré-processamento e Transformação (ou juntar a explicação dos dois)
+Obs: pode haver mudanças na ordem
 
-Obs2: pode haver mudançãs na ordem
-
-Obs3: não usar outros meio p/prever a classe alvo (deve-se prevê-la apenas na mineração)
-
-### Funções de modelo de ML:
-- Instanciando: **modelo = algoritmo(parâmetros)**
-- Treinando: **modelo.fit(X_treino, y_treino)**
-- Prevendo: **^y = modelo.predict(X_teste)**
-- Comparando dados reais c/ previsões: **função_de_comparação(^y, y_teste)**
+Obs2: não usar outros meio p/prever a classe alvo (deve-se prevê-la apenas na mineração)
