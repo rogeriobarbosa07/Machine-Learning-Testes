@@ -17,8 +17,10 @@
         - LabelEncoder: Transformação de **classes** em números (ex: 0, 1, 2 ...). Atua na **var. Alvo**
         - OrdinalEncoder: Parecido com o LabelEncoder, mas projetado para as vars. de Entrada
     - Normalização ou padronização (ex: StandardScaler, MinMaxScaler ou RobustScaler)
-    - Seleção e remoção de colunas
-    - Criação de novos atributos (Extração de características. Engenharia de atributos)
+    - Seleção e remoção de colunas "inúteis" (que não devem influenciar no modelo, dependendo do que se deseja prever)
+        - Combater maldição da dimensionalidade: características em excesso deterioram a performance do modelo (causa overfitting)
+    - Criação de novos atributos (Extração de características)
+        - Extraír outros atributos a partir de um existente
     - Agregação de valores (Binning): Condensação de dados de um determinado atributo em dados mais generalistas
     - Etc.
 4. **Mineração de dados**
@@ -34,41 +36,6 @@ Obs: Definir melhor a diferença entre Pré-processamento e Transformação (ou 
 Obs2: pode haver mudançãs na ordem
 
 Obs3: não usar outros meio p/prever a classe alvo (deve-se prevê-la apenas na mineração)
-
-### Sobre Vetorização
-- De Categorias
-    - One-Hot Encoder para atributos com valores não sequenciais
-    - Label Encoder para atributos com valores sequenciais (ou manipular valores manualmente por garantia)
-- De Classes (alvo)
-    - Apenas Label Encoder
-
-### Engenharia de Atributos
-- Pré-processamento:
-    - Tratamento de valores faltantes
-    - Tratamento de Outliers
-- Codificação de categorias (One-Hot Encoder, Label Encoder)
-- Dimensionamento de características (colocar atributos numéricos na mesma escala)
-- Geração e extração de características
-    - Binning
-    - PCA
-    - Decomposição de datas
-- Seleção de características importantes (ignorar características irrelevantes)
-    - Combater maldição da dimensionalidade: características em excesso deterioram a performance do modelo (causa overfitting)
-
-### Pré-processamento
-- Valores Faltantes
-    - Excluir ou
-    - Preencher: categóricos c/ moda, numéricos c/ mediana
-- Outliers
-    - Não há regra geral
-    - Remover ou normalizar
-
-### Geração e extração de características
-- Binning
-    - Reduz alta quantidade de atributos
-    - Categoria "outros" p/ baixa cardinalidade
-- Geração de características: extrair outros atributos a partir de um existente
-    - Ex: Data -> Dia, Mês, Ano
 
 ### Funções de modelo de ML:
 - Instanciando: **modelo = algoritmo(parâmetros)**
