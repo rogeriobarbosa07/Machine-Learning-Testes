@@ -25,6 +25,7 @@
 
 - Reestudar e estudar melhor sobre Agentes, RAGs e Langchain
     - Orquestração de LLMs (Langchain é uma delas)
+    - n8n, agentes de automação...
 
 - Reestudar e estudar melhor sobre Detecção de Anomailias
     - Técnicas Estatísticas
