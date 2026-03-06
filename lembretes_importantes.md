@@ -36,3 +36,5 @@
     - Técnicas de Séries Temporais
 
 - Reestudar sobre algoritmos de busca e otimização
+
+- Reestudar e estudar melhor sobre Pandas e Numpy
