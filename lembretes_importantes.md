@@ -1,5 +1,7 @@
 - Reestudar melhor sobre os Algoritmos de ML
 
+- Reestudar e estudar melhor sobre Técnicas Avançadas de ML
+
 - Reestudar melhor sobre Redes Neurais
 
 - Reestudar e estudar melhor sobre CNNs:
